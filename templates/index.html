@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIYA Steel | Powered by Python</title>
+    <!-- Python looks inside the static folder for this stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+         <!-- Header Section -->
+    <header>
+        <!-- This container groups the logo and text together -->
+        <div class="logo-brand-container">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="JIYA Steel Logo" class="site-logo">
+            <span class="brand-name">JIYA STEEL</span>
+        </div>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact Business</a>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <h1>Premium Stainless Steel Solutions</h1>
+        <p>Reliable, industrial-grade steel managed efficiently through modern web architecture.</p>
+        <a href="https://wa.me" class="btn" target="_blank">Chat on WhatsApp</a>
+    </section>
+
+      <section id="products" class="products">
+        <h2>Our Core Inventory</h2>
+        <div class="product-grid">
+            <div class="product-card"><h3>SS Sheets & Plates</h3><p>Grades 202, 304, 316, and specialized profiles.</p></div>
+            <div class="product-card"><h3>SS Pipes & Tubes</h3><p>High-pressure industrial grade tubing.</p></div>
+            <div class="product-card"><h3>SS Coils & Rods</h3><p>all types of material in SS availble.</p></div>
+
+        </div>
+        <div class="contact-info">    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h2>Our Facility & Stock</h2>
+        <p>Take a look at our premium stainless steel inventory and warehouse operations.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/steel1.jpg') }}" alt="Stainless Steel Stock">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/steel2.jpg') }}" alt="Our Warehouse">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/steel3.jpg') }}" alt="Steel Delivery">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/steel4.jpg') }}" alt="Steel Delivery">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/steel5.jpg') }}" alt="Steel Delivery">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/steel6.jpg') }}" alt="Steel Delivery">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/steel7.jpg') }}" alt="Steel Delivery">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/steel8.jpg') }}" alt="Steel Delivery">
+            </div>
+        </div>
+    </section>
+
+     <!-- Add this new line below (Replace with your father's actual 15-digit GSTIN) -->
+    <p><strong>📄 GSTIN:</strong> <span class="gst-number">24AMGPC1820J1ZJ</span></p> </div>
+    <p><strong>🛡️ MSME Reg No:</strong> <span class="msme-number">UDYAM-GJ-01-0238960</span></p>
+    <p><strong>📍 Address:</strong> shop no.12 Rajeshwar estate opp.mangal Est gate no.3 ajodairy road rakhiyal ahemdabad 380023</p>
+    <!-- The tel: link lets customers tap the number on a phone to call him instantly -->
+    <p><strong>📞 Phone:</strong> <a href="tel:+916355437872" style="color: #1e293b; text-decoration: none;">+916355437872 </a></p>
+    <p><strong>📧 Email:</strong> jiyasteel62@gmail.com</p>
+</div>
+
+       </section>
+
+       <footer>
+        <p>&copy; 2026 JIYA Steel | Built with Flask & Python</p>
+    </footer>
+
+    </body>
+</html>
