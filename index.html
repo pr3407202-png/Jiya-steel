@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIYA Steel | Premium Stainless Steel Solutions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<!-- 🌀 PREMIUM METALLIC PRELOADER SCREEN -->
+<div id="sitePreloader">
+    <div class="preloader-content">
+        <div class="spinner3d"></div>
+        <h2>JIYA STEEL</h2>
+        <p>Loading Enterprise System...</p>
+    </div>
+</div>
+
+    <!-- Professional Navigation Bar -->
+    <header>
+        <div class="logo-brand-container">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="JIYA Steel Logo" class="site-logo">
+            <span class="brand-name">JIYA STEEL</span>
+        </div>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#gallery">Our Facility</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Industrial Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Stainless Steel Solutions</h1>
+            <p>Reliable, industrial-grade stainless steel products managed efficiently for bulk distribution and commercial supply timelines.</p>
+            <a href="https://wa.me/916355437872" class="whatsapp-btn" target="_blank">
+                💬 Chat Directly on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Polished Products Grid Section -->
+    <section id="products" class="products-section">
+        <h2>Our Core Inventory</h2>
+        <p class="section-subtitle">High-tensile strength metals built to international manufacturing standards.</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="card-icon">🔩</div>
+                <h3>SS Sheets & Plates</h3>
+                <p>Available in Grades 202, 304, and 316 with custom industrial thickness configurations.</p>
+            </div>
+            <div class="product-card">
+                <div class="card-icon">🦯</div>
+                <h3>SS Pipes & Tubes</h3>
+                <p>High-pressure industrial grade tubing and seamlessly welded structural channels.</p>
+            </div>
+            <div class="product-card">
+                <div class="card-icon">🏗️</div>
+                <h3>SS Bars & Coils</h3>
+                <p>Premium steel rods, custom slits, and heavy-duty industrial components.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facility Image Gallery Section (Fixed Text Loops) -->
+    <section id="gallery" class="gallery-section">
+        <h2>Our Facility & Stock</h2>
+        <p class="section-subtitle">Take a look at our premium stainless steel inventory and warehouse operations in Ahmedabad.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item scroll-reveal">
+                <img src="{{ url_for('static', filename='images/steel3.jpg') }}" alt="Stainless Steel Stock Pile">
+                <div class="img-overlay"><h3>Premium Sheets</h3></div>
+            </div>
+            <div class="gallery-item scroll-reveal">
+                <img src="{{ url_for('static', filename='images/steel2.jpg') }}" alt="Industrial Warehouse Storage">
+                <div class="img-overlay"><h3>On-Time Delivery</h3></div>
+            </div>
+            <div class="gallery-item scroll-reveal">
+                <img src="{{ url_for('static', filename='images/steel1.jpg') }}" alt="Commercial Delivery Operations">
+                <div class="img-overlay"><h3>Bulk Inventory</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- High-Trust Corporate Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Corporate Credentials</h2>
+        <p class="section-subtitle">Reach out to our sales desk for orders, dynamic commercial contracts, and verification.</p>
+
+        <div class="contact-container">
+            <div class="info-panel">
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <p><strong>Address:</strong> Shop No.12, Rajeshwar Estate opp.mangal Estate gateno.3,Ajodairy road Rakhial, Ahmedabad, 380023</p>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📞</span>
+                    <p><strong>Phone:</strong> <a href="tel:+916355437872">+91 63554 37872</a></p>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📧</span>
+                    <p><strong>Email:</strong> <a href="mailto:jiyasteel62@gmail.com">jiyasteel62@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="tax-panel">
+                <div class="tax-badge">
+                    <span class="icon">🛡️</span>
+                    <span class="badge-label">GSTIN REGISTERED</span>
+                    <span class="badge-value">24AMGPC1820J1ZJ</span>
+                </div>
+                <div class="tax-badge">
+                    <span class="icon">🏛️</span>
+                    <span class="badge-label">MSME UDYAM REG</span>
+                    <span class="badge-value">UDYAM-GJ-01-0238960</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Minimal Footer -->
+    <footer>
+        <p>&copy; 2026 JIYA Steel. All Rights Reserved. | Government Registered Enterprise</p>
+    </footer>
+
+    <!-- Smooth Reveal Animation Engine -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
+    </script>
+<!-- Script to hide preloader after page fully loads -->
+<script>
+    window.addEventListener('load', () => {
+        const preloader = document.getElementById('sitePreloader');
+        preloader.classList.add('hide-preloader');
+    });
+</script>
+
+</body>
+</html>
