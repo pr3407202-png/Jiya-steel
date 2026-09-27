@@ -3,87 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JIYA Steel | Powered by Python</title>
-    <!-- Python looks inside the static folder for this stylesheet -->
+    <title>JIYA Steel | Premium Stainless Steel Solutions</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+<!-- 🌀 PREMIUM METALLIC PRELOADER SCREEN -->
+<div id="sitePreloader">
+    <div class="preloader-content">
+        <div class="spinner3d"></div>
+        <h2>JIYA STEEL</h2>
+        <p>Loading Enterprise System...</p>
+    </div>
+</div>
 
-         <!-- Header Section -->
+    <!-- Professional Navigation Bar -->
     <header>
-        <!-- This container groups the logo and text together -->
         <div class="logo-brand-container">
             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="JIYA Steel Logo" class="site-logo">
             <span class="brand-name">JIYA STEEL</span>
         </div>
         <nav>
             <a href="#products">Products</a>
-            <a href="#contact">Contact Business</a>
+            <a href="#gallery">Our Facility</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-
+    <!-- Industrial Hero Section -->
     <section class="hero">
-        <h1>Premium Stainless Steel Solutions</h1>
-        <p>Reliable, industrial-grade steel managed efficiently through modern web architecture.</p>
-        <a href="https://wa.me" class="btn" target="_blank">Chat on WhatsApp</a>
+        <div class="hero-content">
+            <h1>Premium Stainless Steel Solutions</h1>
+            <p>Reliable, industrial-grade stainless steel products managed efficiently for bulk distribution and commercial supply timelines.</p>
+            <a href="https://wa.me/916355437872" class="whatsapp-btn" target="_blank">
+                💬 Chat Directly on WhatsApp
+            </a>
+        </div>
     </section>
 
-      <section id="products" class="products">
+    <!-- Polished Products Grid Section -->
+    <section id="products" class="products-section">
         <h2>Our Core Inventory</h2>
+        <p class="section-subtitle">High-tensile strength metals built to international manufacturing standards.</p>
         <div class="product-grid">
-            <div class="product-card"><h3>SS Sheets & Plates</h3><p>Grades 202, 304, 316, and specialized profiles.</p></div>
-            <div class="product-card"><h3>SS Pipes & Tubes</h3><p>High-pressure industrial grade tubing.</p></div>
-            <div class="product-card"><h3>SS Coils & Rods</h3><p>all types of material in SS availble.</p></div>
-
-        </div>
-        <div class="contact-info">    <!-- Gallery Section -->
-    <section class="gallery-section">
-        <h2>Our Facility & Stock</h2>
-        <p>Take a look at our premium stainless steel inventory and warehouse operations.</p>
-
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="{{ url_for('static', filename='images/steel1.jpg') }}" alt="Stainless Steel Stock">
+            <div class="product-card">
+                <div class="card-icon">🔩</div>
+                <h3>SS Sheets & Plates</h3>
+                <p>Available in Grades 202, 304, and 316 with custom industrial thickness configurations.</p>
             </div>
-            <div class="gallery-item">
-                <img src="{{ url_for('static', filename='images/steel2.jpg') }}" alt="Our Warehouse">
+            <div class="product-card">
+                <div class="card-icon">🦯</div>
+                <h3>SS Pipes & Tubes</h3>
+                <p>High-pressure industrial grade tubing and seamlessly welded structural channels.</p>
             </div>
-            <div class="gallery-item">
-                <img src="{{ url_for('static', filename='images/steel3.jpg') }}" alt="Steel Delivery">
-            </div>
-            <div class="gallery-item">
-                <img src="{{ url_for('static', filename='images/steel4.jpg') }}" alt="Steel Delivery">
-            </div>
-            <div class="gallery-item">
-                <img src="{{ url_for('static', filename='images/steel5.jpg') }}" alt="Steel Delivery">
-            </div>
-            <div class="gallery-item">
-                <img src="{{ url_for('static', filename='images/steel6.jpg') }}" alt="Steel Delivery">
-            </div>
-            <div class="gallery-item">
-                <img src="{{ url_for('static', filename='images/steel7.jpg') }}" alt="Steel Delivery">
-            </div>
-            <div class="gallery-item">
-                <img src="{{ url_for('static', filename='images/steel8.jpg') }}" alt="Steel Delivery">
+            <div class="product-card">
+                <div class="card-icon">🏗️</div>
+                <h3>SS Bars & Coils</h3>
+                <p>Premium steel rods, custom slits, and heavy-duty industrial components.</p>
             </div>
         </div>
     </section>
 
-     <!-- Add this new line below (Replace with your father's actual 15-digit GSTIN) -->
-    <p><strong>📄 GSTIN:</strong> <span class="gst-number">24AMGPC1820J1ZJ</span></p> </div>
-    <p><strong>🛡️ MSME Reg No:</strong> <span class="msme-number">UDYAM-GJ-01-0238960</span></p>
-    <p><strong>📍 Address:</strong> shop no.12 Rajeshwar estate opp.mangal Est gate no.3 ajodairy road rakhiyal ahemdabad 380023</p>
-    <!-- The tel: link lets customers tap the number on a phone to call him instantly -->
-    <p><strong>📞 Phone:</strong> <a href="tel:+916355437872" style="color: #1e293b; text-decoration: none;">+916355437872 </a></p>
-    <p><strong>📧 Email:</strong> jiyasteel62@gmail.com</p>
-</div>
+    <!-- Facility Image Gallery Section (Fixed Text Loops) -->
+    <section id="gallery" class="gallery-section">
+        <h2>Our Facility & Stock</h2>
+        <p class="section-subtitle">Take a look at our premium stainless steel inventory and warehouse operations in Ahmedabad.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item scroll-reveal">
+                <img src="{{ url_for('static', filename='images/steel3.jpg') }}" alt="Stainless Steel Stock Pile">
+                <div class="img-overlay"><h3>Premium Sheets</h3></div>
+            </div>
+            <div class="gallery-item scroll-reveal">
+                <img src="{{ url_for('static', filename='images/steel2.jpg') }}" alt="Industrial Warehouse Storage">
+                <div class="img-overlay"><h3>On-Time Delivery</h3></div>
+            </div>
+            <div class="gallery-item scroll-reveal">
+                <img src="{{ url_for('static', filename='images/steel1.jpg') }}" alt="Commercial Delivery Operations">
+                <div class="img-overlay"><h3>Bulk Inventory</h3></div>
+            </div>
+        </div>
+    </section>
 
-       </section>
+    <!-- High-Trust Corporate Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Corporate Credentials</h2>
+        <p class="section-subtitle">Reach out to our sales desk for orders, dynamic commercial contracts, and verification.</p>
 
-       <footer>
-        <p>&copy; 2026 JIYA Steel | Built with Flask & Python</p>
+        <div class="contact-container">
+            <div class="info-panel">
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <p><strong>Address:</strong> Shop No.12, Rajeshwar Estate opp.mangal Estate gateno.3,Ajodairy road Rakhial, Ahmedabad, 380023</p>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📞</span>
+                    <p><strong>Phone:</strong> <a href="tel:+916355437872">+91 63554 37872</a></p>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📧</span>
+                    <p><strong>Email:</strong> <a href="mailto:jiyasteel62@gmail.com">jiyasteel62@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="tax-panel">
+                <div class="tax-badge">
+                    <span class="icon">🛡️</span>
+                    <span class="badge-label">GSTIN REGISTERED</span>
+                    <span class="badge-value">24AMGPC1820J1ZJ</span>
+                </div>
+                <div class="tax-badge">
+                    <span class="icon">🏛️</span>
+                    <span class="badge-label">MSME UDYAM REG</span>
+                    <span class="badge-value">UDYAM-GJ-01-0238960</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Minimal Footer -->
+    <footer>
+        <p>&copy; 2026 JIYA Steel. All Rights Reserved. | Government Registered Enterprise</p>
     </footer>
 
-    </body>
+    <!-- Smooth Reveal Animation Engine -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
+    </script>
+<!-- Script to hide preloader after page fully loads -->
+<script>
+    window.addEventListener('load', () => {
+        const preloader = document.getElementById('sitePreloader');
+        preloader.classList.add('hide-preloader');
+    });
+</script>
+
+</body>
 </html>
